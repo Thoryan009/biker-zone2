@@ -19,6 +19,19 @@
             font-family: 'Poppins';
         }
     </style>
+
+    <!-- custom style -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'bike-primary': 'rgb(231, 111, 81)',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 
 <body>
@@ -43,7 +56,7 @@
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-xllg:text-4xl">Biker Zone</a>
+                    <a class="btn btn-ghost text-xl lg:text-4xl">Biker Zone</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1  text-base">
@@ -62,8 +75,8 @@
 
         <!-- banner bar start here  -->
         <section>
-            <div class="carousel w-full">
-                <div id="slide1" class="carousel-item relative w-full  bg-red-50 h-[580px] lg:h-full">
+            <div class="carousel w-full bg-red-50">
+                <div id="slide1" class="carousel-item relative w-full   h-[580px] lg:h-full">
                     <div class="flex flex-col lg:flex-row gap-20 p-24">
                         <!-- content -->
                         <div class="space-y-7 flex-1">
@@ -73,7 +86,7 @@
                             </h1>
                             <p>Amet minim mollit non deserunt ullamco
                                 est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                            <a class="btn btn-ghost text-4xl">Purchase</a>
+                            <a class="btn bottom-2 text-4xl bg-bike-primary text-white">Purchase</a>
                         </div>
                         <!-- bike img -->
                         <div class="flex-1">
@@ -89,13 +102,11 @@
                     <div class="flex flex-col lg:flex-row gap-20 p-24">
                         <!-- content -->
                         <div class="space-y-7 flex-1">
-                            <h1 class="text-4xl lg:text-6xl font-bold">Ride-on R15 V4
-                                <hr>
-                                with Smile
+                            <h1 class="text-4xl lg:text-6xl font-bold">Honda CBR 300R
                             </h1>
                             <p>Amet minim mollit non deserunt ullamco
                                 est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                            <a class="btn btn-ghost text-4xl">Purchase</a>
+                            <a class="btn btn-ghost text-4xl bg-bike-primary text-white">Purchase</a>
                         </div>
                         <!-- bike img -->
                         <div class="flex-1">
@@ -117,7 +128,7 @@
                             </h1>
                             <p>Amet minim mollit non deserunt ullamco
                                 est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                            <a class="btn btn-ghost text-4xl">Purchase</a>
+                            <a class="btn btn-ghost text-4xl bg-bike-primary text-white">Purchase</a>
                         </div>
                         <!-- bike img -->
                         <div class="flex-1">
@@ -139,7 +150,7 @@
                             </h1>
                             <p>Amet minim mollit non deserunt ullamco
                                 est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                            <a class="btn btn-ghost text-4xl">Purchase</a>
+                            <a class="btn btn-ghost text-4xl bg-bike-primary text-white">Purchase</a>
                         </div>
                         <!-- bike img -->
                         <div class="flex-1">
@@ -166,38 +177,38 @@
             <h3 class="text-4xl font-semibold text-center">Latest News</h3>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 ">
                 <!-- first card -->
-                <div class="card  bg-base-100 shadow-xl my-10">
+                <div class="card  bg-base-100 shadow-xl my-10 p-10">
                     <figure><img src="./images/others/latest1.png"
                             alt="Shoes" /></figure>
                     <div class="card-body text-center">
                         <h2 class="card-title text-3xl mx-auto">Ducati XDIAVEL S-73</h2>
-                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quia ex in nulla est ut sunt eligendi enim minus unde.</p>
+                        <p class="leading-8 pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quia ex in nulla est ut sunt eligendi enim minus unde.</p>
                         <div class="card-actions justify-center">
-                            <button class="btn btn-error text-white">Purchase</button>
+                            <button class="btn btn-error text-white bg-bike-primary ">Purchase</button>
                         </div>
                     </div>
                 </div> 
                 <!-- second card -->
-                <div class="card  bg-base-100 shadow-xl my-10">
+                <div class="card  bg-base-100 shadow-xl my-10 p-10">
                     <figure><img src="./images/others/latest2.png"
                             alt="Shoes" /></figure>
                     <div class="card-body text-center">
-                        <h2 class="card-title text-3xl mx-auto">Motorcycles & Scooters</h2>
-                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quia ex in nulla est ut sunt eligendi enim minus unde.</p>
+                        <h2 class="card-title text-2xl mx-auto">Motorcycles & Scooters</h2>
+                        <p class="leading-8 pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quia ex in nulla est ut sunt eligendi enim minus unde.</p>
                         <div class="card-actions justify-center">
-                            <button class="btn btn-error text-white">Purchase</button>
+                            <button class="btn btn-error text-white bg-bike-primary">Purchase</button>
                         </div>
                     </div>
                 </div> 
                 <!-- third card -->
-                <div class="card  bg-base-100 shadow-xl my-10">
+                <div class="card  bg-base-100 shadow-xl my-10 p-10">
                     <figure><img src="./images/others/latest3.png"
                             alt="Shoes" /></figure>
                     <div class="card-body text-center">
                         <h2 class="card-title text-3xl mx-auto">2021 Honda CBR500R</h2>
-                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quia ex in nulla est ut sunt eligendi enim minus unde.</p>
+                        <p class="leading-8 pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quia ex in nulla est ut sunt eligendi enim minus unde.</p>
                         <div class="card-actions justify-center">
-                            <button class="btn btn-error text-white">Purchase</button>
+                            <button class="btn btn-error text-white bg-bike-primary">Purchase</button>
                         </div>
                     </div>
                 </div> 
@@ -276,8 +287,86 @@
                   </div>
             </div>
         </section>
+
+        <!-- Q & A section -->
+        <section class="my-24">
+            <h3 class="text-4xl font-semibold text-center">Frequently Asked Questions</h3>
+            <div>
+                <div class="hero  ">
+                    <div class="hero-content flex-col lg:flex-row ">
+                      <img src="./images/others/faq.png" class="max-w-sm rounded-lg shadow-2xl" />
+                      <div class="border border-gray-200 rounded-2xl">
+                        <div class="collapse collapse-arrow">
+                            <input type="radio" name="my-accordion-2" checked="checked" /> 
+                            <div class="collapse-title text-xl font-medium">
+                                What are the most important things I should
+                                know about riding a bike?
+                            </div>
+                            <div class="collapse-content"> 
+                              <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
+                            </div>
+                          </div>
+                          <div class="collapse collapse-arrow ">
+                            <input type="radio" name="my-accordion-2" /> 
+                            <div class="collapse-title text-xl font-medium">
+                                How can I tell if my helmet is old and I need a 
+                                new one?
+                            </div>
+                            <div class="collapse-content"> 
+                              <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider.</p>
+                            </div>
+                          </div>
+                          <div class="collapse collapse-arrow ">
+                            <input type="radio" name="my-accordion-2" /> 
+                            <div class="collapse-title text-xl font-medium">
+                                My bike has been in storage is it safe to ride?
+                            </div>
+                            <div class="collapse-content"> 
+                              <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider.</p>
+                            </div>
+                          </div>
+                          <div class="collapse collapse-arrow ">
+                            <input type="radio" name="my-accordion-2" /> 
+                            <div class="collapse-title text-xl font-medium">
+                                What rules should I follow when riding my bike?
+                            </div>
+                            <div class="collapse-content"> 
+                              <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider.</p>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer class="footer p-10 bg-neutral text-neutral-content">
+      
+      <div>
+        <div class="flex gap-10">
+            <a href="">Download Now</a>
+            <a href="">Licence</a> 
+            
+           </div>
+        <ul class="flex gap-8 my-5">
+            <li><a href="">About</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">Pricinf</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Help</a></li>
+            <li><a href="">Privacy Polacy</a></li>
+            
+           </ul>
+           <small>© 2020 bike. All rights reserved</small>
+      </div>
+        <nav>
+          <h6 class="footer-title">Get the App</h6> 
+          <div class="grid grid-cols-2 lg:grid-cols-2  gap-4 ">
+            <a><img class="w-28" src="./images/others/android.png" alt=""></a>
+            <a><img class="w-28" src="./images/others/ios.png" alt=""></a>
+          </div>
+        </nav>
+      </footer>
 </body>
 
 </html>
